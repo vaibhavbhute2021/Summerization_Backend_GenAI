@@ -7,8 +7,9 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-   origin:"*",
-    credentials : true,
+  origin: "https://vaibhavbhute2021.github.io", // your frontend domain
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }))
 
 // Initialize OpenAI client
